@@ -1,0 +1,140 @@
+@import "mixin";
+
+.abhyant-header{
+
+    .header-first{
+        width: 100%;
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    &.dropdown-toggle{
+                        margin-left: 50px;
+                        color: #6aaa6a;
+                    }
+                    &.success{
+                        @extend .dropdown-toggle;
+                    }
+                }
+            }
+        }
+
+    }
+        &.bg-dark{
+        background-color: #0e1055 !important;
+        
+    }
+    .logoClass{
+        height: 90px;
+    }
+    .product-list{
+        ul{
+            list-style: none;
+        }
+    }
+    .solution-list{
+        @extend .product-list;
+    }
+    .services-list{
+        @extend .product-list;
+    }
+    .support-list{
+        @extend .product-list;
+    }
+    .about-list{
+        @extend .product-list;
+    }
+}
+.dropdown-menu{
+    .dropdown-item{
+        color: #0e1055 !important;
+        &:hover{
+            background-color: white !important;
+            color: #6aaa6a !important;
+        }
+        .head-color{
+            color: #6aaa6a !important;
+        }
+    }
+}
+
+.home{
+    .firstpart{
+        @extend .m-width-1600;
+    //    @extend .m-width-1600;
+    //    margin-right: 0px !important;
+    //    margin-left: 0px !important;
+    p:hover{
+        font-weight: bold;
+        font-size: large;
+    }
+    img{
+    height: 500px !important;
+    width: 100%;
+    }
+    .second-back{
+        img{
+        width: 900px !important;
+    }
+    }
+}
+}
+.footer{
+    background-color: #0e1055;  
+    ul{
+
+        li{
+            color: #6aaa6a;
+            list-style: none;
+            a{
+                color: #6aaa6a;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.whyus {
+    h6{
+        font-size: xx-large;
+        margin-bottom: 16px;
+        color: steelblue;
+    }
+}
+.electrical-contracting{
+    h4{
+        color: steelblue;
+    }
+}
+.electrical-switchboard{
+    @extend .electrical-contracting;
+}
+.privacy-policy{
+    @extend .electrical-contracting;
+}
+.terms{
+    @extend .electrical-contracting;
+}
+.sitemap{
+    .footer{
+        background-color: white !important;
+        li:first-child{
+            margin-bottom: 32px !important;
+            
+        }
+        li{
+            margin-bottom: 8px !important;
+        }
+        
+    }
+}
+.profile{
+    .profile-heading{
+        font-size: xx-large;
+    }
+}
+.management{
+    .manager-subhead{
+font-size: xx-large;
+    }
+}
